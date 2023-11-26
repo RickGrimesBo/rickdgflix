@@ -16,10 +16,10 @@ from utils import GdFlix
 from exceptions import GdFlixError
 
 load_dotenv()
-BOT_TOKEN = "BOT_TOKEN"
-GDFLIX_API_KEY= "API_KEY"
-API_BASE_URI = "BASE_URI"
-AUTH_USERS = ["AUTH_USERS"]
+BOT_TOKEN = "6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw"
+GDFLIX_API_KEY= "01818e5c5fa16f7fb87f9b50f3b4ed6c"
+API_BASE_URI = "https://gdflix.live/v2"
+AUTH_USERS = ["664936478"]
 
 dp = Dispatcher()
 gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
