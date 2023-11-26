@@ -29,7 +29,7 @@ async def start(message: Message) -> None:
     await message.answer(f"𝙃𝙚𝙡𝙡𝙤 {hbold(message.from_user.full_name)} 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 𝙩𝙤 𝙂𝘿𝙁𝙡𝙞𝙭 𝙪𝙧𝙡 𝙂𝙚𝙣𝙖𝙧𝙚𝙩𝙤𝙧")
     msg_text,
 reply_markup=InlineKeyboardMarkup(
-                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
+                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="t.me/J1_CHANG_WOOK")]]
                 ),  
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
@@ -69,7 +69,7 @@ async def gdrive(message: Message) -> None:
 async def evts(message: Message):
     await message.answer("𝙎𝙤𝙧𝙧𝙮 𝙉𝙤 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 🚶‍♂️")
 reply_markup=InlineKeyboardMarkup(
-                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
+                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="t.me/J1_CHANG_WOOK")]]
                 ),
 async def main() -> None:
     bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
