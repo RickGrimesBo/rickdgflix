@@ -16,10 +16,10 @@ from utils import GdFlix
 from exceptions import GdFlixError
 
 load_dotenv()
-BOT_TOKEN = getenv("6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw")
-GDFLIX_API_KEY= getenv("01818e5c5fa16f7fb87f9b50f3b4ed6c")
-API_BASE_URI = getenv("https://gdflix.live/v2")
-AUTH_USERS = [int(user) for user in getenv("664936478", "").split(" ")]
+BOT_TOKEN = "6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw"
+GDFLIX_API_KEY= "01818e5c5fa16f7fb87f9b50f3b4ed6c"
+API_BASE_URI = "https://gdflix.live/v2"
+AUTH_USERS = [664936478,]
 
 dp = Dispatcher(Hi Welcome to GDFlix Link Genaretor Just Send Google Grive Link Make GDFlix url)
 gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
