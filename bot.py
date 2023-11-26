@@ -27,6 +27,7 @@ gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 @dp.message(CommandStart())
 async def start(message: Message) -> None:
     await message.answer(f"𝙃𝙚𝙡𝙡𝙤 {hbold(message.from_user.full_name)} 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 𝙩𝙤 𝙂𝘿𝙁𝙡𝙞𝙭 𝙪𝙧𝙡 𝙂𝙚𝙣𝙖𝙧𝙚𝙩𝙤𝙧")
+    msg_text,
 reply_markup=InlineKeyboardMarkup(
                     inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
                 ),  
@@ -59,6 +60,7 @@ async def gdrive(message: Message) -> None:
             )
         except GdFlixError as err:
             await msg.edit_text(f"GDFLIX ERROR: {err}")
+            msg_text,
         except Exception:
             await msg.edit_text("UNKNOWN ERROR OCCURED")
     else: await message.answer("This url is not a valid gdrive url")
