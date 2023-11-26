@@ -16,7 +16,7 @@ from utils import GdFlix
 from exceptions import GdFlixError
 
 load_dotenv()
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw")
 GDFLIX_API_KEY= getenv("API_KEY")
 API_BASE_URI = getenv("BASE_URI")
 AUTH_USERS = [int(user) for user in getenv("AUTH_USERS", "").split(" ")]
