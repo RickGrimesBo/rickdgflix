@@ -63,7 +63,7 @@ async def gdrive(message: Message) -> None:
 
 @dp.message()
 async def evts(message: Message):
-    await message.answer("Sorry No Access This Bot 🚶‍♂️ Contact: @J1_CHANG_WOOK")
+    await message.answer("<b>Sorry No Access This Bot 🚶‍♂️ Contact: @J1_CHANG_WOOK<b>")
 
 async def main() -> None:
     bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
