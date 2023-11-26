@@ -65,7 +65,7 @@ async def gdrive(message: Message) -> None:
 
 @dp.message()
 async def evts(message: Message):
-    await message.answer({hbold"Sorry No Access This Bot 🚶‍♂️ Contact")}
+    await message.answer("Sorry No Access This Bot 🚶‍♂️ Contact")
 reply_markup=InlineKeyboardMarkup(
                     inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
                 ),
