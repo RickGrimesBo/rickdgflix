@@ -26,7 +26,7 @@ gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 
 @dp.message(CommandStart())
 async def start(message: Message) -> None:
-    await message.answer(f"Hello, {hbold(message.from_user.full_name)}, welcome to google drive to gdflix url converter")
+    await message.answer(f"Hello, {hbold(message.from_user.full_name)}, Welcome to Google Drive to GdFlix url Converter")
 
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
