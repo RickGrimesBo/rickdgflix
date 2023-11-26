@@ -21,10 +21,10 @@ GDFLIX_API_KEY= getenv("01818e5c5fa16f7fb87f9b50f3b4ed6c")
 API_BASE_URI = getenv("https://gdflix.live/v2")
 AUTH_USERS = [int(user) for user in getenv("664936478", "").split(" ")]
 
-dp = Dispatcher()
+dp = Dispatcher(Hi Welcome to GDFlix Link Genaretor Just Send Google Grive Link Make GDFlix url)
 gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 
-@dp.message(CommandStart())
+@dp.message(CommandStart()
 async def start(message: Message) -> None:
     await message.answer(f"Hello, {hbold(message.from_user.full_name)}, welcome to google drive to gdflix url converter")
 
