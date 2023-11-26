@@ -30,6 +30,7 @@ async def start(message: Message) -> None:
 reply_markup=InlineKeyboardMarkup(
                     inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
                 ),
+          )
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
     if "folders" in message.text:
