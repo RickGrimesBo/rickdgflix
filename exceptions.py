@@ -1,0 +1,3 @@
+
+class GdFlixError(Exception):
+    pass
