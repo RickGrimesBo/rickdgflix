@@ -17,8 +17,8 @@ from exceptions import GdFlixError
 
 load_dotenv()
 BOT_TOKEN = getenv("6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw")
-GDFLIX_API_KEY= getenv("API_KEY")
-API_BASE_URI = getenv("BASE_URI")
+GDFLIX_API_KEY= getenv("01818e5c5fa16f7fb87f9b50f3b4ed6c")
+API_BASE_URI = getenv("https://gdflix.live/v2")
 AUTH_USERS = [int(user) for user in getenv("AUTH_USERS", "").split(" ")]
 
 dp = Dispatcher()
