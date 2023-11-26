@@ -19,7 +19,7 @@ load_dotenv()
 BOT_TOKEN = "6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw"
 GDFLIX_API_KEY= "01818e5c5fa16f7fb87f9b50f3b4ed6c"
 API_BASE_URI = "https://gdflix.live/v2"
-AUTH_USERS = [664936478,]
+AUTH_USERS = [664936478]
 
 dp = Dispatcher(Hi Welcome to GDFlix Link Genaretor Just Send Google Grive Link Make GDFlix url)
 gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
