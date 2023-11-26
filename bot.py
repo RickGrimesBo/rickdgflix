@@ -24,7 +24,7 @@ AUTH_USERS = [664936478, ]
 dp = Dispatcher()
 gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 
-@dp.message(CommandStart()
+@dp.message(CommandStart())
 async def start(message: Message) -> None:
     await message.answer(f"Hello, {hbold(message.from_user.full_name)}, welcome to google drive to gdflix url converter")
 
