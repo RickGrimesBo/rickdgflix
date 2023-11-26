@@ -26,7 +26,7 @@ gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 
 @dp.message(CommandStart())
 async def start(message: Message) -> None:
-    await message.answer(f"Hello {hbold(message.from_user.full_name)} Welcome to Google Drive to GDFlix url Genaretor")
+    await message.answer(f"𝙃𝙚𝙡𝙡𝙤 {hbold(message.from_user.full_name)} 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 𝙩𝙤 𝙂𝘿𝙁𝙡𝙞𝙭 𝙪𝙧𝙡 𝙂𝙚𝙣𝙖𝙧𝙚𝙩𝙤𝙧")
 reply_markup=InlineKeyboardMarkup(
                     inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
                 ),  
@@ -65,7 +65,7 @@ async def gdrive(message: Message) -> None:
 
 @dp.message()
 async def evts(message: Message):
-    await message.answer("Sorry No Access This Bot 🚶‍♂️ Contact")
+    await message.answer("𝙎𝙤𝙧𝙧𝙮 𝙉𝙤 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 🚶‍♂️")
 reply_markup=InlineKeyboardMarkup(
                     inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="http://t.me/J1_CHANG_WOOK")]]
                 ),
