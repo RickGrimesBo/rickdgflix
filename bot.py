@@ -32,7 +32,7 @@ async def start(message: Message) -> None:
         ),
     )
 
-@dp.message(CommandStart())
+@dp.message(CommandHelp())
 async def help(message: Message) -> None:
     await message.answer(f"𝙃𝙞 {hbold(message.from_user.full_name)} 𝙅𝙪𝙨𝙩 𝙎𝙚𝙣𝙙 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 ♻️ 𝙇𝙞𝙣𝙠 𝙈𝙖𝙠𝙚 𝙂𝘿𝙁𝙇𝙡𝙞𝙭 𝙇𝙞𝙣𝙠 📎",
         reply_markup=InlineKeyboardMarkup(
