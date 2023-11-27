@@ -26,11 +26,11 @@ gdflix = GdFlix(api_key=GDFLIX_API_KEY, base_uri=API_BASE_URI)
 
 @dp.message(CommandStart())
 async def start(message: Message) -> None:
-    await message.answer(f"𝙃𝙚𝙡𝙡𝙤 {hbold(message.from_user.full_name)} 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 𝙩𝙤 𝙂𝘿𝙁𝙡𝙞𝙭 𝙪𝙧𝙡 𝙂𝙚𝙣𝙖𝙧𝙚𝙩𝙤𝙧")
-    msg_text,
-reply_markup=InlineKeyboardMarkup(
-                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="t.me/J1_CHANG_WOOK")]]
-                ),  
+    await message.answer(f"𝙃𝙚𝙡𝙡𝙤 {hbold(message.from_user.full_name)} 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 𝙩𝙤 𝙂𝘿𝙁𝙡𝙞𝙭 𝙪𝙧𝙡 𝙂𝙚𝙣𝙖𝙧𝙚𝙩𝙤𝙧",
+        reply_markup=InlineKeyboardMarkup(
+            inline_keyboard=[[InlineKeyboardButton(text="Bot Devoloper 🕵‍♂", url="https://t.me/J1_CHANG_WOOK")]]
+        ),
+    )  
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
     if "folders" in message.text:
