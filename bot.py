@@ -30,7 +30,8 @@ async def start(message: Message) -> None:
         reply_markup=InlineKeyboardMarkup(
             inline_keyboard=[[InlineKeyboardButton(text="Bot Devoloper 🕵‍♂", url="https://t.me/J1_CHANG_WOOK")]]
         ),
-    )  
+    )
+
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
     if "folders" in message.text:
@@ -67,10 +68,12 @@ async def gdrive(message: Message) -> None:
 
 @dp.message()
 async def evts(message: Message):
-    await message.answer("𝙎𝙤𝙧𝙧𝙮 𝙉𝙤 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 🚶‍♂️")
-reply_markup=InlineKeyboardMarkup(
-                    inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="t.me/J1_CHANG_WOOK")]]
-                ),
+    await message.answer("𝙎𝙤𝙧𝙧𝙮 𝙉𝙤 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 🚶‍♂️",
+        reply_markup=InlineKeyboardMarkup(
+            inline_keyboard=[[InlineKeyboardButton(text="'Bot Devoloper 🕵‍♂", url="t.me/J1_CHANG_WOOK")]]
+        )
+    )
+
 async def main() -> None:
     bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
     await dp.start_polling(bot)
