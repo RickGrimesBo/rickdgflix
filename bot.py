@@ -44,7 +44,7 @@ async def gdrive(message: Message) -> None:
             file_url = f"https://gdflix.live/file/{res.get('key')}"
             msg_text = ""
             if name := res.get("name"):
-                msg_text += f"<b>File Name:</b> <i>{"name"}</i>\n"
+                msg_text += f"<b>File Name:</b> <i>("name")</i>\n"
             if size := res.get("size"):
                 msg_text += f"<b>File Size:</b> <code>{humanize.naturalsize(size)}</code>\n"
             if created_date := res.get("create_at"):
