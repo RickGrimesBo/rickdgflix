@@ -32,6 +32,14 @@ async def start(message: Message) -> None:
         ),
     )
 
+@dp.message(CommandStart())
+async def help(message: Message) -> None:
+    await message.answer(f"𝙃𝙞 {hbold(message.from_user.full_name)} 𝙅𝙪𝙨𝙩 𝙎𝙚𝙣𝙙 𝙂𝙤𝙤𝙜𝙡𝙚 𝘿𝙧𝙞𝙫𝙚 ♻️ 𝙇𝙞𝙣𝙠 𝙈𝙖𝙠𝙚 𝙂𝘿𝙁𝙇𝙡𝙞𝙭 𝙇𝙞𝙣𝙠 📎",
+        reply_markup=InlineKeyboardMarkup(
+            inline_keyboard=[[InlineKeyboardButton(text="Bot Devoloper 🕵‍♂", url="https://t.me/J1_CHANG_WOOK")]]
+        ),
+   )
+
 @dp.message(MagicFilter.text.regexp("http[s]*:\/\/.+") & MagicFilter.from_user.id.in_(AUTH_USERS))
 async def gdrive(message: Message) -> None:
     if "folders" in message.text:
