@@ -41,7 +41,7 @@ async def gdrive(message: Message) -> None:
         msg = await message.answer(f"Sending {file_id} to gdflix...")
         try:
             res = await gdflix.share_file(file_id)
-            file_url = f"https://gdflix.live/file/{res.get('key')}"
+            file_url = f"https://nerd.gdflix.ink/file/{res.get('key')}"
             msg_text = ""
             if name := res.get("name"):
                 msg_text += f"<b>File Name:</b> <code>{name}</code>\n"
