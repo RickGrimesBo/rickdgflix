@@ -18,7 +18,7 @@ from exceptions import GdFlixError
 load_dotenv()
 BOT_TOKEN = "6726159496:AAHthEdSk_BhPb66o6PIu2qDV4nEhuiLskw"
 GDFLIX_API_KEY= "01818e5c5fa16f7fb87f9b50f3b4ed6c"
-API_BASE_URI = "https://gdflix.live/v2"
+API_BASE_URI = "https://dart.gdflix.ink/v2"
 AUTH_USERS = [664936478, ]
 
 dp = Dispatcher()
@@ -41,7 +41,7 @@ async def gdrive(message: Message) -> None:
         msg = await message.answer(f"Sending {file_id} to gdflix...")
         try:
             res = await gdflix.share_file(file_id)
-            file_url = f"https://nerd.gdflix.ink/file/{res.get('key')}"
+            file_url = f"https://dart.gdflix.ink/file/{res.get('key')}"
             msg_text = ""
             if name := res.get("name"):
                 msg_text += f"<b>File Name:</b> <code>{name}</code>\n"
